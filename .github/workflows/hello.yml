@@ -8,3 +8,7 @@ jobs:
     steps:
       - name: Print hello
         run: echo "Hello GH-200 prep!"
+      - name: Print hello and save locally
+        run: | 
+            echo "Hello GH-200 prep!" | tee output.log
+
