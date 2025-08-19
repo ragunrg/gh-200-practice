@@ -10,5 +10,6 @@ jobs:
       - name: Show OS info
         run: uname -a
 
-      - name: List files
-        run: ls -la
+      - name: Node version
+        run: node -v
+
