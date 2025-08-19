@@ -1,0 +1,14 @@
+name: Checkout Demo
+
+on: [push]
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show OS info
+        run: uname -a
+
+      - name: List files
+        run: ls -la
