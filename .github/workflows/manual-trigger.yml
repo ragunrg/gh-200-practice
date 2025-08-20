@@ -1,0 +1,11 @@
+name: manual_test
+on: 
+  workflow_dispatch:
+
+jobs:
+  manual_test_job:
+      runs-on: self-hosted
+      steps: 
+        - run: echo "test manual trigger" | tee output.log
+
+      
