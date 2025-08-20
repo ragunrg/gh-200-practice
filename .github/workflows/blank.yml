@@ -1,0 +1,9 @@
+name: cron-workflow
+on: 
+  schedule:
+    - cron: "*/1 * * * *"
+jobs:
+  cron-job:
+    runs-on: self-hosted
+    steps:
+      - run: echo "cron job tested every 1 minute" | tee output.log
